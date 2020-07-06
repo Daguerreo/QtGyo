@@ -1,0 +1,15 @@
+{
+    "output_type": "file",
+    "output_path": "/tmp",
+    "base_name": "log",
+    "pattern": "[%{time yyyy.MM.dd hh:mm:ss}][%{type}][%{category}] %{message}",
+    "context": [
+        "com.usb.debug": false
+        "com.gui.*": false
+        "com.logger": {
+            "debug": false,
+            "info": true
+            "warning": true
+        }
+    ]
+}
